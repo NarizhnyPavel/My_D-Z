@@ -23,16 +23,18 @@ namespace ConsoleApplication1
                     Console.ReadLine();
                     i = 6;
                 }
-                else
+                if (c > b)
                 {
-                    if (c > b)
-                    {
-                        Console.WriteLine("Число меньше");
-                    }
-                    if (c < b)
-                    {
-                        Console.WriteLine("Число больше");
-                    }
+                    Console.WriteLine("Число меньше");
+                }
+                if (c < b)
+                {
+                    Console.WriteLine("Число больше");
+                }
+                if ((i == 5) && (c != b))
+                { 
+                    Console.WriteLine("Ты не отгадал( Попробуй ещё раз!");
+                    Console.ReadLine();
                 }
             }
         }
