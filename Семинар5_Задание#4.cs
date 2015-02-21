@@ -14,9 +14,9 @@ namespace ConsoleApplication1
             Console.WriteLine(name + ", будем тренировать устный счет!");
             int otv;
             int ball = 0;
+            Random c = new Random();
             for (int i = 1; i <= 10; i++)
             {
-                Random c = new Random();
                 int a = c.Next(20);
                 int b = c.Next(20);
                 Console.WriteLine("Перемножь " + a + " и " + b);
