@@ -30,7 +30,7 @@ namespace ConsoleApplication26
                         mas[x] = a;
                     }
             }
-            Console.Write("Отсортированный по убыванию масиив: ");
+            Console.Write("Отсортированный по убыванию массив: ");
             for (int i = 0; i < n; i++)
             {
                 Console.Write(mas[i] + " ");
