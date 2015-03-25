@@ -1,0 +1,19 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Введите числа через пробел: ");
+            string[] otvet = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);//нашел в интернете
+            double sredaref = aref(otvet);
+            Console.WriteLine("Среднее арифметическое чисел: " + sredaref);
+            Console.ReadLine();
+        }
+        static int aref(string[] otvet)
+        {
+            int symm = 0, n = 0;
+            for(int i = 0; i < otvet.Length; i++)
+            {
+                symm = symm + int.Parse(otvet[i]);
+                n++;
+            }
+            int arefm = symm / n;
+            return arefm;
+        }
